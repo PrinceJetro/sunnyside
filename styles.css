@@ -1,0 +1,259 @@
+#arrow {
+    position: fixed;
+    top: -50px; /* Initial position above the viewport */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translateX(-50%);
+    animation-name: slideIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /* Keeps the final position after animation */
+}
+
+@keyframes slideIn {
+    0% {
+        top: -500px; /* Initial position above the viewport */
+    }
+    100% {
+        top: 0; /* Final position at the top of the viewport */
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        top: 0; /* Initial position at the top of the viewport */
+    }
+    100% {
+        top: -500px; /* Final position above the viewport */
+    }
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.navbar-brand{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-toggler{
+    background-color: aliceblue;
+}
+
+nav a{
+    color: aliceblue;
+}
+
+nav a:hover{
+    background-color: aliceblue;
+    color:hsl(212, 27%, 19%);
+    border-radius: 20px;
+}
+
+
+nav div {
+margin-left: 65%;
+}
+
+@media only screen and (max-width: 500px) {
+    nav div {
+        margin-left: 0%;
+        } 
+     }
+
+.scrolled {
+    background: linear-gradient(to right, skyblue, yellow); /* Change to your desired color */
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-image: url("./images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+
+.header-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;    
+}
+
+header h1{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 150px;
+    font-size: 60px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.first-gallery div{
+    height: 500px;
+}
+
+.first-gallery .one, .first-gallery .four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+}
+.first-gallery .one h1, .first-gallery .one a, .first-gallery .four h1,.first-gallery .four a{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
+
+.first-gallery .two{
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100% ,50%;
+}
+.first-gallery .three{
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100% ,50%;
+}
+.first-gallery .five{
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100% ,50%;
+}
+.first-gallery .six{
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100% ,50%;
+}
+.first-gallery .five, .first-gallery .six{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+}
+.first-gallery .five h1, .first-gallery .six h1{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
+
+.testimonials{
+    padding: 10%;
+    text-align: center;
+}
+
+.testimonials .row .col-sm-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials img{
+    border-radius: 50%;
+    margin-bottom: 15%;
+}
+
+.testimonials h1{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.testimonials h4{
+    text-align: center;
+    font-weight: 100;
+}
+.testimonials p{
+    font-weight: 100;
+}
+
+.last-gallery .row div{
+    height: 500px;
+}
+
+.last-gallery .row .one{
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+ 
+}
+.last-gallery .row .two{
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+ 
+}
+.last-gallery .row .three{
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+ 
+}
+.last-gallery .row .four{
+    background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+ 
+}
+
+footer{
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+footer .row{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links{
+    margin-top: 40px;
+}
+
+footer h1{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+.footer-links a{
+    margin: 20px;
+    color: hsl(212, 27%, 19%);
+    text-align: center;
+}
+
+.footer-images{
+    margin-top: 50px;
+}
+.footer-images  img{
+    margin: 20px;
+}
